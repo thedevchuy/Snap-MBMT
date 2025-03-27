@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.41",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "shapescape:shadow_entity",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/empty"
+			},
+			"geometry": {
+				"default": "geometry.shapescape.empty"
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

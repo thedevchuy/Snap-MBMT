@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.30",
+	"animation_controllers": {
+		"controller.animation.shapescape.skin_entity_trigger": {
+			"initial_state": "init",
+			"states": {
+				"init": {
+					"transitions": [
+						{
+							"wait_for_reset2": "!q.property('shapescape:ui_trigger')"
+						},
+						{
+							"wait_for_reset": "q.property('shapescape:ui_trigger')"
+						}
+					],
+					"on_entry": []
+				},
+				"wait_for_reset": {
+					"transitions": [
+						{
+							"trigger_ui": "!q.property('shapescape:ui_trigger')"
+						}
+					],
+					"on_entry": []
+				},
+				"wait_for_reset2": {
+					"transitions": [
+						{
+							"trigger_ui2": "q.property('shapescape:ui_trigger')"
+						}
+					],
+					"on_entry": []
+				},
+				"trigger_ui": {
+					"transitions": [
+						{
+							"trigger_ui2": "q.property('shapescape:ui_trigger')"
+						}
+					],
+					"on_entry": ["/scriptevent shapescape:open_skin_entity_ui @p"]
+				},
+				"trigger_ui2": {
+					"transitions": [
+						{
+							"trigger_ui": "!q.property('shapescape:ui_trigger')"
+						}
+					],
+					"on_entry": ["/scriptevent shapescape:open_skin_entity_ui @p"]
+				}
+			}
+		}
+	}
+}
