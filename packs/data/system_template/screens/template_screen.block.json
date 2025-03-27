@@ -11,6 +11,7 @@
                     "face_dimming": false
                 }
             },
+            "minecraft:display_name": "`f'{color.title()} Screen'`",
             "minecraft:light_emission": 15,
             "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:destructible_by_mining": { "seconds_to_destroy": 99999 },
