@@ -1,0 +1,21 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": { "identifier": "`f'snap:{color}_screen'`", "menu_category": { "category": "construction" }},
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "`f'snap.{color}'`",
+                    "render_method": "blend",
+                    "ambient_occlusion": false,
+                    "face_dimming": false
+                }
+            },
+            "minecraft:light_emission": 15,
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:destructible_by_mining": { "seconds_to_destroy": 99999 },
+            "minecraft:destructible_by_explosion": { "explosion_resistance": 99999 },
+            "minecraft:light_dampening": 15
+        }
+    }
+}

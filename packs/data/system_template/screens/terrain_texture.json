@@ -1,0 +1,5 @@
+{
+    "texture_data": {
+        "`[K(f'snap.{color}', color=color) for color in colors]`": { "textures": "`f'textures/blocks/{color}'`" }
+    }
+}
